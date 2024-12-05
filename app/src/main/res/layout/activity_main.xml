@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Название товара" />
+
+    <EditText
+        android:id="@+id/descText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Описание товара"
+        android:inputType="textMultiLine" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image" />
+
+    <Button
+        android:id="@+id/selectImgButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выбрать изображение"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добавить товар"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Обновить товар"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Удалить товар"
+        android:layout_marginTop="16dp" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
